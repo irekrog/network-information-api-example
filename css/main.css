@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+a {
+  display: block;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Network Info</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <h1>Network Info example</h1>
+</header>
+<main>
+  <article>
+    <h2>Connection types</h2>
+    <table>
+      <caption>Effective connection types</caption>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+      </tr>
+      <tr data-connection="bluetooth">
+        <td>Bluetooth</td>
+        <td>A Bluetooth connection.</td>
+      </tr>
+      <tr data-connection="cellular">
+        <td>Cellular</td>
+        <td>A cellular connection (e.g., EDGE, HSPA, LTE, etc.).</td>
+      </tr>
+      <tr data-connection="ethernet">
+        <td>Ethernet</td>
+        <td>An Ethernet connection.</td>
+      </tr>
+      <tr data-connection="none">
+        <td>None</td>
+        <td>No network connection. The user agent will not contact the network when the user follows links or when a
+          script requests a remote page (or knows that such an attempt would fail) - i.e., equivalent to
+          navigator.onLine === false in HTML
+        </td>
+      </tr>
+      <tr data-connection="mixed">
+        <td>Mixed</td>
+        <td>The user agent is using multiple connection types.</td>
+      </tr>
+      <tr data-connection="other">
+        <td>Other</td>
+        <td>The connection type that is known, but not one of enumerated connection types.</td>
+      </tr>
+      <tr data-connection="unknown">
+        <td>Unknown</td>
+        <td>The user agent has established a network connection, but is unable, or unwilling, to determine the
+          underlying connection technology.
+        </td>
+      </tr>
+      <tr data-connection="wifi">
+        <td>Wi-Fi</td>
+        <td>A Wi-Fi connection.</td>
+      </tr>
+      <tr data-connection="wimax">
+        <td>Wimax</td>
+        <td>A WiMAX connection</td>
+      </tr>
+    </table>
+  </article>
+</main>
+<footer>
+  <a href="http://wicg.github.io/netinfo/" target="_blank" rel="noopener">Network Information API Specification</a>
+  <a href="http://caniuse.com/#search=Network%20Information%20API" target="_blank" rel="noopener">This example works on latest Chrome and Opera</a>
+</footer>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/network-info/index.js"></script>
+</body>
+</html>
