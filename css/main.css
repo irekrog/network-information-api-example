@@ -28,3 +28,9 @@ footer {
 a {
   display: block;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+}
